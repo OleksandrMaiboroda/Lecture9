@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(someNumber) {
+
+            let Palindrome = +someNumber.toString().split('').reverse().join('');
+
+            if (someNumber === Palindrome) {
+                return someNumber;
+            } else {
+                someNumber += Palindrome;
+                return isPalindrome(someNumber);
+            }
+
+        }
+
+        console.log(isPalindrome(1951));
+    </script>
+
+</body>
+</html>
