@@ -13,7 +13,7 @@
             let Palindrome = +someNumber.toString().split('').reverse().join('');
 
             if (someNumber === Palindrome) {
-                return someNumber;
+                return true;
             } else {
                 someNumber += Palindrome;
                 return isPalindrome(someNumber);
